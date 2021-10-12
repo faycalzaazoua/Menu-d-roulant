@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+header{
+    background-color: teal;
+    margin: 0;
+    padding: 15px
+}
+.menu{
+    display: flex;
+    padding: 0;
+}
+
+.menu li{
+    list-style-type: none; /* permet d'elever les puces */
+    position: relative  /* permet que les sous onglets soient de la même taille que les onglets du menu*/
+}
+
+.menu a{
+    display: inline-block; /* permet de mettre le menu sous forme de block alignés */
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    width: 90%;
+    margin: 0.5rem;
+    padding: 0.5rem
+}
+
+.sous{
+    display: none; /* cache les sous onglets */
+    position: absolute; /* permet aux sous onglet de passer par dessus le texte ecrit derrière */
+    z-index: 1000;
+}
+
+.menu li:hover .sous{
+    display: block /* permet d'afficher les sous onglets lorsqu'on passe la souris sur les onglets */
+}
