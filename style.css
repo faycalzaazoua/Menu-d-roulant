@@ -9,9 +9,11 @@ header{
     margin: 0;
     padding: 15px
 }
+
 .menu{
     display: flex;
     padding: 0;
+    position: sticky;
 }
 
 .menu li{
@@ -20,12 +22,22 @@ header{
 }
 
 .menu a{
-    display: inline-block; /* permet de mettre le menu sous forme de block alignés */
-    border: 1px solid rgb(0, 0, 0);
+    display: block; /* permet de mettre le menu sous forme de block alignés */
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 3px;
+    color:rgb(255, 255, 255);
     width: 90%;
     margin: 0.5rem;
-    padding: 0.5rem
+    padding: 0.5rem;
+    background-color:royalblue; /* couleur de fond des onglets */
+    text-decoration: none; /* effacer le soulignement des onglets */
+    text-align: center; /* centrer le texte */
+}
+
+.menu a:hover{
+    background-color: silver;
+    color: tomato;
+    border-color: tomato;
 }
 
 .sous{
