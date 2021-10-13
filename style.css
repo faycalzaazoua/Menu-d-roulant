@@ -5,9 +5,11 @@
 }
 
 header{
+    /* display: flex; permet de déplacer les blocs 
+    justify-content: space-evenly;  place le menu sur la droite */
     background-color: teal;
     margin: 0;
-    padding: 15px
+    padding: 0;
 }
 
 .menu{
@@ -18,8 +20,10 @@ header{
 
 .menu li{
     list-style-type: none; /* permet d'elever les puces */
-    position: relative  /* permet que les sous onglets soient de la même taille que les onglets du menu*/
+    position: relative; /* permet que les sous onglets soient de la même taille que les onglets du menu*/
+    
 }
+
 
 .menu a{
     display: block; /* permet de mettre le menu sous forme de block alignés */
